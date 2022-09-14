@@ -15,7 +15,7 @@ display: block;
 }
 
 .footerMenu ul li a{
-  color: var(--color-neutral-300);
+  color: var(--color-neutral-100);
   text-decoration: none;
 }
 

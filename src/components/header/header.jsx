@@ -5,7 +5,9 @@ import styles from "./header.module.css";
 
 export const Header = () => (
   <div className={styles.container}>
-    <Logo />
+    <h1>
+      <Logo />
+    </h1>
     <div className={styles.navLinks}>
       <Navigation
         links={[
@@ -13,18 +15,10 @@ export const Header = () => (
           { id: 2, text: "About", url: "/about" },
           { id: 3, text: "Contact", url: "/contact" },
           { id: 4, text: "Products", url: "/dummy" },
-          { id: 5, text: "Cart", url: "/dummy" },
-          { id: 6, text: "Hot Deals", url: "/dummy" },
+          { id: 5, text: "Cart", url: "/dummy1" },
+          { id: 6, text: "Hot Deals", url: "/dummy2" },
         ]}
       />
-      <div className={styles.dropdown} tabIndex="0">
-        <button className={styles.dropbtn} tabIndex="-1">Dropdown</button>
-        <ul className={styles.dropdownContent} tabIndex="1" role="tablist">
-          <li><a href="#">Link 1</a></li>
-          <li><a href="#">Link 2</a></li>
-          <li><a href="#">Link 3</a></li>
-        </ul>
-      </div>
     </div>
     <MiniCart />
   </div>

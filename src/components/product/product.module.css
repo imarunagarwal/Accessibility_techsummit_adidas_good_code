@@ -72,6 +72,7 @@
   fill: var(--color-neutral-800);
 }
 
-.test {
-  position: absolute;
+.stripAnchorStyles {
+  color: inherit;
+  text-decoration: none;
 }

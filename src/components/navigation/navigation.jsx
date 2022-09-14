@@ -1,4 +1,4 @@
-import styles from './navigation.module.css';
+import styles from "./navigation.module.css";
 
 export const Navigation = ({ links }) => {
   const renderedLinks = links.map((link) => (
@@ -6,5 +6,7 @@ export const Navigation = ({ links }) => {
       {link.text}
     </a>
   ));
-  return <nav role="navigation" className={styles.container}>{renderedLinks}</nav>;
+  return (
+    <nav role="navigation" className={styles.container}>{renderedLinks}</nav>
+  );
 };
