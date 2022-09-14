@@ -17,13 +17,13 @@ export const Header = () => (
           { id: 6, text: "Hot Deals", url: "/dummy" },
         ]}
       />
-      <div className={styles.dropdown}>
-        <button className={styles.dropbtn}>Dropdown</button>
-        <div className={styles.dropdownContent}>
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
-        </div>
+      <div className={styles.dropdown} tabIndex="0">
+        <button className={styles.dropbtn} tabIndex="-1">Dropdown</button>
+        <ul className={styles.dropdownContent} tabIndex="1" role="tablist">
+          <li><a href="#">Link 1</a></li>
+          <li><a href="#">Link 2</a></li>
+          <li><a href="#">Link 3</a></li>
+        </ul>
       </div>
     </div>
     <MiniCart />
