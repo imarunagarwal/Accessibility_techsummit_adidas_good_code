@@ -1,3 +1,4 @@
+import { CustomSelect } from "../dropdown";
 import styles from "./navigation.module.css";
 
 export const Navigation = ({ links }) => {
@@ -7,6 +8,8 @@ export const Navigation = ({ links }) => {
     </a>
   ));
   return (
-    <nav role="navigation" className={styles.container}>{renderedLinks}</nav>
+    <nav role="navigation" className={styles.container}>{renderedLinks}
+    <CustomSelect />
+    </nav>
   );
 };
